@@ -11422,3 +11422,22 @@ header.masthead .h1 {
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.bold-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mission {
+  font-size: 20px;
+}
+
+.email-color {
+  color: #f4623a;
+  font-weight: bolder;
+}
+
+.icon-size {
+  color: #f4623a;
+  font-size: 25px;
+}
