@@ -9,13 +9,14 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Waldo Foundation</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap Icons-->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
       rel="stylesheet"
     />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
     <!-- Google fonts-->
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700"
@@ -37,6 +38,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
@@ -78,7 +80,12 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Volunteer</a>
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerModal"
+                >Volunteer</a
+              >
             </li>
           </ul>
         </div>
@@ -106,7 +113,11 @@
             <p class="text-white font-weight-bold mb-2">
               Nonprofit Housing Organization
             </p>
-            <p class="text-white font-weight-bold mb-5">Boston</p>
+            <p class="text-white font-weight-bold mb-2">Boston</p>
+            <p class="text-white font-weight-bold mb-4">
+              Waldo Foundation is a bridge between the banks, sellers and the
+              communities of immigrants and refugees.
+            </p>
             <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
           </div>
         </div>
@@ -121,19 +132,110 @@
             <i class="fas fa-hands-helping icon-size"></i>
             <hr class="divider" />
             <hr class="divider divider-light" />
-            <p class="75 mb-4 mission">
+            <p class="75 mb-5 mission">
               The Waldo Foundations Mission is to help communities with Housing
               needs. We are working with low-income families to have sustainable
               housing whether its getting low-income housing or buying their
               first home. Refugees and Immigrants are encroached to get
               assistance.
             </p>
+            <!-- BUTTON MODAL FOR VOLUNTEER -->
+            <button
+              data-bs-toggle="modal"
+              data-bs-target="#volunteerModal"
+              class="volunteer-btn btn btn-outline-primary mb-5"
+            >
+              Volunteer <i class="fas fa-people-carry"></i>
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="volunteerModal"
+              tabindex="-1"
+              aria-labelledby="volunteerModal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Volunteer
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label"
+                          >Full Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-name"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="Email" class="col-form-label">Email</label>
+                        <input type="text" class="form-control" id="Email" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="number" class="col-form-label"
+                          >Number</label
+                        >
+                        <input type="number" class="form-control" id="number" />
+                      </div>
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label"
+                          >Message</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="message-text"
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-outline-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="75 mb-5 mission">
+              Families would learn the value of having an excellent credit
+              rating, for them to buy a car from the auto dealers with decent
+              payment that they could afford, and not breaking their bank. The
+              families would learn the value of having good credit score and how
+              much money they would save if they would purchase product from
+              stores and car dealers.
+            </p>
+            <ul class="mt-5 lang">
+              <li>English</li>
+              <li class="licolor">Somali</li>
+              <li>Arabic</li>
+              <li class="licolor">Swahili</li>
+              <li>French</li>
+              <li class="licolor">Maay Maay</li>
+              <li>Darija</li>
+            </ul>
           </div>
-        </div>
-        <div class="text-center mt-3">
-          <a href="#" class="volunteer-btn btn btn-outline-primary"
-            >Volunteer <i class="fas fa-people-carry"></i
-          ></a>
         </div>
       </div>
     </section>
@@ -246,11 +348,11 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- SimpleLightbox plugin JS-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-    <!-- Core theme JS-->
+
     <script src="js/scripts.js"></script>
   </body>
 </html>

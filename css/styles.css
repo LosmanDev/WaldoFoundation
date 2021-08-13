@@ -11448,3 +11448,11 @@ header.masthead .h1 {
 .volunteer-btn {
   font-size: 25px;
 }
+.lang li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.licolor {
+  color: #f4623a;
+}
