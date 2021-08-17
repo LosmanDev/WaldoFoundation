@@ -62,13 +62,21 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="btn btn-outline-primary" href="#"
+        <a
+          data-bs-toggle="modal"
+          data-bs-target="#donorModal"
+          class="btn btn-outline-primary"
+          href="#"
           >Donate <i class="fas fa-hand-holding-usd"></i
         ></a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
             </li>
 
             <li class="nav-item">
@@ -128,7 +136,7 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="mt-0">Our Mission.</h2>
+            <h2 class="mt-0">Our <span class="colr">Mission</span></h2>
             <i class="fas fa-hands-helping icon-size"></i>
             <hr class="divider" />
             <hr class="divider divider-light" />
@@ -143,12 +151,12 @@
             <button
               data-bs-toggle="modal"
               data-bs-target="#volunteerModal"
-              class="volunteer-btn btn btn-outline-primary mb-5"
+              class="volunteer-btn btn btn-outline-primary mb-2"
             >
               Volunteer <i class="fas fa-people-carry"></i>
             </button>
 
-            <!-- Modal -->
+            <!-- Modal volunteer -->
             <div
               class="modal fade"
               id="volunteerModal"
@@ -218,15 +226,54 @@
               </div>
             </div>
 
-            <p class="75 mb-5 mission">
+            <!-- Donation modal -->
+            <div
+              class="modal fade"
+              id="donorModal"
+              tabindex="-1"
+              aria-labelledby="donorModal"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Under Construction
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">
+                        For Donations Please Contact
+                        <br />
+                        <br />
+                        Maka Osman
+                        <br />
+                        <br />
+                        Maka<span class="email-color">@</span
+                        >WaldoFoundation.org
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <p class="75 mb-5 mission">
               Families would learn the value of having an excellent credit
               rating, for them to buy a car from the auto dealers with decent
               payment that they could afford, and not breaking their bank. The
               families would learn the value of having good credit score and how
               much money they would save if they would purchase product from
               stores and car dealers.
-            </p>
-            <ul class="mt-5 lang">
+            </p> -->
+            <ul class="mt-5 mb-5 lang">
               <li>English</li>
               <li class="licolor">Somali</li>
               <li>Arabic</li>
@@ -236,6 +283,21 @@
               <li>Darija</li>
             </ul>
           </div>
+        </div>
+        <div class="text-center" id="services">
+          <h2 class="mb-4 mt-3">
+            Services We <span class="colr">Provide</span>
+          </h2>
+          <i class="fas fa-people-carry icon-size"></i>
+          <hr class="divider" />
+          <hr class="divider divider-light" />
+          <h6 class="mb-4">Rent Assistance</h6>
+          <h6 class="mb-4">Help Clients Apply Low Income</h6>
+          <h6 class="mb-4">Housing</h6>
+          <h6 class="mb-4">Housing Advocacy</h6>
+          <h6 class="mb-4">Home Repair Assistance</h6>
+          <h6 class="mb-4">First Time Home Buyer Assistance</h6>
+          <h6>Help Families to Prevent Foreclosure</h6>
         </div>
       </div>
     </section>

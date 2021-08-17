@@ -11453,6 +11453,15 @@ header.masthead .h1 {
   padding: 10px;
 }
 
+.colr,
 .licolor {
   color: #f4623a;
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .lang {
+    padding-right: 20px;
+  }
 }
