@@ -62,13 +62,30 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a
-          data-bs-toggle="modal"
-          data-bs-target="#donorModal"
-          class="btn btn-outline-primary"
-          href="#"
-          >Donate <i class="fas fa-hand-holding-usd"></i
-        ></a>
+        <!-- DONATION HTML -->
+        <form
+          action="https://www.paypal.com/donate"
+          method="post"
+          target="_top"
+        >
+          <input type="hidden" name="hosted_button_id" value="UC2Q8HG95LV5Y" />
+          <input
+            type="image"
+            src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+            border="0"
+            name="submit"
+            title="PayPal - The safer, easier way to pay online!"
+            alt="Donate with PayPal button"
+          />
+          <img
+            alt=""
+            border="0"
+            src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+            width="1"
+            height="1"
+          />
+        </form>
+        <!-- END OF DONATION HTML -->
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
@@ -121,8 +138,11 @@
             <p class="text-white font-weight-bold mb-4">
               Nonprofit Housing Organization
             </p>
+
             <p class="text-white font-weight-bold mb-4">Boston</p>
-            <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+            <a class="btn btn-primary btn-xl mb-5" href="#about"
+              >Find Out More</a
+            >
           </div>
         </div>
       </div>
@@ -136,10 +156,14 @@
             <i class="fas fa-hands-helping icon-size"></i>
             <hr class="divider" />
 
-            <p class="75 mb-5 mission">
+            <p class="75 mission mb-5">
               Waldo Foundation Inc was founded To help Refugees and Immigrants
               to have access to safe, clean, and affordable housing. Become
               homeowners and increase their financial literacy.
+            </p>
+            <p class="font-weight-bold mb-5 mission">
+              Host a <span class="colr">Family</span> or Donate a
+              <span class="colr">Home</span>!
             </p>
             <!-- BUTTON MODAL FOR VOLUNTEER -->
             <button
@@ -262,6 +286,8 @@
             <h4 class="mt-5">
               Our Staff are <span class="colr">Fluent</span> in
             </h4>
+            <i class="fas fa-globe-africa icon-size"></i>
+            <hr class="divider" />
             <ul class="mb-5 lang">
               <li>English</li>
               <li class="licolor">Somali</li>
