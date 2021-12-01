@@ -221,22 +221,16 @@
                         <label for="message-text" class="col-form-label"
                           >Message</label
                         >
-                        <textarea
+                        <input
                           class="form-control"
-                          id="message-text"
-                        ></textarea>
+                          id="mssg"
+                        ></input>
                       </div>
                     </form>
                   </div>
                   <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-outline-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-outline-primary">
+                   
+                    <button onclick='sendMail()' type="button" class="btn btn-outline-primary">
                       Submit
                     </button>
                   </div>
@@ -312,21 +306,35 @@
           <h6 class="mb-4">Housing Advocacy</h6>
           <h6 class="mb-4">Home Repair Assistance</h6>
           <h6 class="mb-4">First Time Home Buyer Assistance</h6>
-          <h6>Help Families to Prevent Foreclosure</h6>
+          <h6 class="mb-5">Help Families to Prevent Foreclosure</h6>
         </div>
       </div>
-    </section>
 
-    <div class="container text-center">
-      <h2>Affordable <span class="colr">Housing</span></h2>
-      <i class="fas fa-home icon-size ml-2"></i>
-      <hr class="divider" />
-      <h6 class="mb-5">
-        The Waldo Foundation is creating a brighter tomorrow <br />
-        by helping families to get access to affordable housing, a first time
-        home buyer program.
-      </h6>
-    </div>
+      <div class="container">
+        <h1 class="display-6 text-center">
+          <i class="fas fa-sign icon-size"></i> First
+          <span class="colr">Time </span>Home
+          <span class="colr">Buyer</span> Program
+        </h1>
+        <h2 class="display-7 text-center mb-5">
+          <span class="colr">Starting</span> dates<span class="colr">:</span>
+          11/<span class="colr">13</span>/2021
+          <span class="colr">&</span> 11/<span class="colr">20</span>/2021
+          <i class="fas fa-sign icon-size"></i>
+        </h2>
+      </div>
+
+      <div class="container text-center">
+        <h2>Affordable <span class="colr">Housing</span></h2>
+        <i class="fas fa-home icon-size ml-2"></i>
+        <hr class="divider" />
+        <h5 class="mb-5">
+          The Waldo Foundation is creating a brighter tomorrow <br />
+          by helping families to get access to affordable housing, a first time
+          home buyer program.
+        </h5>
+      </div>
+    </section>
 
     <div id="portfolio">
       <div class="container-fluid p-0">
@@ -409,20 +417,11 @@
             <br class="mb-4" />
             Maka<span class="email-color">@</span>WaldoFoundation.org
           </p>
-          <p class="mb-4">
-            <span class="bold-text">Nancy</span>
-            <br class="mb-4" />
-            Nancy<span class="email-color">@</span>WaldoFoundation.org
-          </p>
+
           <p class="mb-4">
             <span class="bold-text">Abdulkadir </span>
             <br class="mb-4" />
             Abdulkadir<span class="email-color">@</span>WaldoFoundation.org
-          </p>
-          <p class="mb-4">
-            <span class="bold-text">Abdillahi</span>
-            <br class="mb-4" />
-            Abdillahi<span class="email-color">@</span>WaldoFoundation.org
           </p>
 
           <h4 class="mb-4 mt-4">Office Location</h4>
@@ -441,6 +440,8 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 

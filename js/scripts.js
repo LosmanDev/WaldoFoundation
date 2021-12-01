@@ -1,12 +1,3 @@
-/*!
- * Start Bootstrap - Creative v7.0.0 (https://startbootstrap.com/theme/creative)
- * Copyright 2013-2021 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
- */
-//
-// Scripts
-//
-
 window.addEventListener("DOMContentLoaded", (event) => {
   // Navbar shrink function
   var navbarShrink = function () {
@@ -54,3 +45,24 @@ window.addEventListener("DOMContentLoaded", (event) => {
     elements: "#portfolio a.portfolio-box",
   });
 });
+
+//EmailJS
+
+(function () {
+  emailjs.init("user_iT8PeoOmd8g43E2I3f2Wb");
+})();
+
+function sendMail(params) {
+  let tempParams = {
+    to_name: document.getElementById("recipient-name").value,
+    number: document.getElementById("number").value,
+    email: document.getElementById("Email").value,
+    message: document.getElementById("mssg").value,
+  };
+  emailjs
+    .send("service_u8vvva9", "template_xrv2jyp", tempParams)
+    .then(function (res) {
+      console.log("Sucess", res.status);
+      location.reload();
+    });
+}
