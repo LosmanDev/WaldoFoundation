@@ -66,3 +66,8 @@ function sendMail(params) {
       location.reload();
     });
 }
+
+const year1 = new Date().getFullYear();
+const year = document.getElementById("year");
+
+year.innerHTML = year1;
