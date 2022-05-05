@@ -11445,6 +11445,11 @@ header.masthead .h1 {
   font-size: 25px;
 }
 
+icon-size-donate {
+  color: #f4623a;
+  font-size: 25px !important;
+}
+
 .volunteer-btn {
   font-size: 25px;
 }
