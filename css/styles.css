@@ -11426,6 +11426,10 @@ header.masthead .h1 {
   opacity: 1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .bold-text {
   font-size: 18px;
   font-weight: bold;
@@ -11461,6 +11465,22 @@ icon-size-donate {
 .colr,
 .licolor {
   color: #f4623a;
+}
+
+.css_transition {
+  animation: transitionIN 0.75s;
+}
+
+@keyframes transitionIN {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
 }
 
 /* ----------- iPhone X ----------- */

@@ -38,14 +38,15 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body id="page-top">
+  <body id="page-top" class="css_transition">
     <!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
-      <div class="container px-4 px-lg-5">
+      <div class="container px-4 px-lg-5" data-aos="fade-down" data-aos-duration="2000">
         <a class="navbar-brand" href="#page-top">Waldo Foundation Inc</a>
 
         <button
@@ -75,9 +76,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio"
-                ><i class="fas fa-home"></i
-              ></a>
+              <a class="nav-link" href="#portfolio">Gallery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -114,12 +113,12 @@
             text-center
           "
         >
-          <div class="col-lg-8 align-self-end">
+          <div class="col-lg-8 align-self-end" data-aos="fade-down" data-aos-duration="2000">
             <h1 class="text-white font-weight-bold">Waldo Foundation Inc</h1>
             <i class="fas fa-globe icon-size"></i>
             <hr class="divider" />
           </div>
-          <div class="col-lg-8 align-self-baseline">
+          <div class="col-lg-8 align-self-baseline" data-aos="fade-down" data-aos-duration="2000">
             <p class="text-white font-weight-bold mb-4">
               Nonprofit Housing Organization
             </p>
@@ -133,10 +132,13 @@
       </div>
     </header>
     <!-- About-->
+   
+    
     <section class="page-section bg-primary" id="about">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
+            <div data-aos="fade-down" data-aos-duration="2000" >
             <h2 class="mt-0">Our <span class="colr">Mission</span></h2>
             <i class="fas fa-hands-helping icon-size"></i>
             <hr class="divider" />
@@ -150,6 +152,7 @@
               Host a <span class="colr">Family</span> or Donate a
               <span class="colr">Home</span>!
             </p>
+            
             <!-- BUTTON MODAL FOR VOLUNTEER -->
             <button
               data-bs-toggle="modal"
@@ -222,46 +225,9 @@
                 </div>
               </div>
             </div>
-
-            <!-- Donation modal -->
-            <div
-              class="modal fade"
-              id="donorModal"
-              tabindex="-1"
-              aria-labelledby="donorModal"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Under Construction
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">
-                        For Donations Please Contact
-                        <br />
-                        <br />
-                        Maka Osman
-                        <br />
-                        <br />
-                        Maka<span class="email-color">@</span
-                        >WaldoFoundation.org
-                      </label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+          </div>
+            
+            <div data-aos="fade-down" data-aos-duration="2000">
             <h4 class="mt-5">
               Our Staff are <span class="colr">Fluent</span> in
             </h4>
@@ -278,6 +244,7 @@
             </ul>
           </div>
         </div>
+        <div data-aos="fade-down" data-aos-duration="2000">
         <div class="text-center" id="services">
           <h2 class="mb-4 mt-3">
             Services We <span class="colr">Provide</span>
@@ -294,8 +261,9 @@
           <h6 class="mb-5">Help Families to Prevent Foreclosure</h6>
         </div>
       </div>
+      
 
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="2000">
         <h1 class="display-6 text-center">
           <i class="fas fa-sign icon-size"></i> First
           <span class="colr">Time </span>Home
@@ -309,7 +277,7 @@
         </h2>
       </div>
 
-      <div class="container text-center">
+      <div class="container text-center" data-aos="fade-down" data-aos-duration="2000">
         <h2>Affordable <span class="colr">Housing</span></h2>
         <i class="fas fa-home icon-size ml-2"></i>
         <hr class="divider" />
@@ -320,8 +288,9 @@
         </h5>
       </div>
     </section>
+  </div>
 
-    <div id="portfolio">
+    <div id="portfolio" data-aos="fade-down" data-aos-duration="2000">
       <div class="container-fluid p-0">
         <div class="row g-0">
           <div class="col-lg-4 col-sm-6">
@@ -383,7 +352,7 @@
     </div>
 
     <!-- Contact-->
-    <section class="page-section" id="contact">
+    <section class="page-section" id="contact" data-aos="fade-down" data-aos-duration="2000">
       <div class="container">
         <div class="row gx-4 gx-lg-5 justify-content-center mb-4">
           <div class="col-lg-8 col-xl-6 text-center">
@@ -424,7 +393,7 @@
       </div>
     </section>
     <!-- Footer-->
-    <footer class="bg-light py-5">
+    <footer class="bg-light py-5" data-aos="fade-down" data-aos-duration="2000">
       <div class="container px-4 px-lg-5">
         <div class="small text-center text-muted">
           Copyright &copy; <span id="year"></span> - Waldo Foundation Inc
@@ -438,6 +407,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
 
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/scripts.js"></script>
+    
   </body>
 </html>

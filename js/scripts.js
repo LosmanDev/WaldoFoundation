@@ -71,3 +71,5 @@ const year1 = new Date().getFullYear();
 const year = document.getElementById("year");
 
 year.innerHTML = year1;
+
+AOS.init();
