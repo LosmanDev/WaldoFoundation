@@ -11198,7 +11198,7 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
 
 .text-white-75 {
@@ -11465,6 +11465,10 @@ icon-size-donate {
 .colr,
 .licolor {
   color: #f4623a;
+}
+
+.border-color{
+  border: 1px solid red;
 }
 
 .css_transition {
