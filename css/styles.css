@@ -11477,6 +11477,7 @@ icon-size-donate {
   animation: transitionIN 0.75s;
 }
 
+
 @keyframes transitionIN {
   from {
     opacity: 0;
