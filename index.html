@@ -94,7 +94,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Gallery</a>
+              <a
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#imagesModal"
+                >Gallery</a
+              >
             </li>
 
             <li class="nav-item">
@@ -331,10 +336,9 @@
           12/<span class="colr">10</span>/2022
 
           <span class="colr">,</span> 12/<span class="colr">17</span>/2022
-          </i> <span class="colr">,</span> 1/<span class="colr">4</span
-          >/2023
+          <span class="colr">,</span> 1/<span class="colr">7</span>/2023
 
-          <span class="colr">&</span> 1/<span class="colr">7</span>/2023
+          <span class="colr">&</span> 1/<span class="colr">14</span>/2023
           <i class="fas fa-sign icon-size"></i>
         </h4>
 
@@ -363,7 +367,107 @@
           <i class="fas fa-sign icon-size"></i>
         </h4>
       </div>
+      <div class="container text-center mb-5">
+        <!-- BUTTON MODAL FOR IMAGES -->
+        <button
+          data-bs-toggle="modal"
+          data-bs-target="#imagesModal"
+          class="btn btn-outline-primary btn-lg mb-2 gallary-btn"
+        >
+          Gallary <i class="fa-solid fa-camera-retro"></i>
+        </button>
 
+        <!-- Modal volunteer -->
+        <div
+          class="modal fade"
+          id="imagesModal"
+          tabindex="-1"
+          aria-labelledby="imagesModal"
+          aria-hidden="true"
+        >
+          <div id="modal-image-width" class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title gallary-title" id="exampleModalLabel">
+                  Gallary <i class="fa-solid fa-camera-retro"></i>
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col">
+                    <img
+                      class="img-fluid rounded text-center"
+                      src="./assets/Waldo/h-2.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/h-1.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/h-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/h-4.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-1.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-2.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-4.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-5.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-6.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="img-fluid rounded"
+                      src="./assets/Waldo/v-7.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary">
+                  Exit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div
         class="container text-center"
         data-aos="fade-down"
