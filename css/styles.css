@@ -11456,8 +11456,13 @@ icon-size-donate {
   font-size: 25px !important;
 }
 
+.gallary-btn,
 .volunteer-btn {
   font-size: 25px;
+}
+
+.gallary-btn {
+  width: 100%;
 }
 .lang li {
   display: inline-block;
@@ -11477,6 +11482,15 @@ icon-size-donate {
   animation: transitionIN 0.75s;
 }
 
+#modal-image-width {
+  max-width: 100%;
+}
+
+.gallary-title {
+  margin-left: 700px;
+  font-size: 35px;
+  font-weight: bold;
+}
 
 @keyframes transitionIN {
   from {
@@ -11490,10 +11504,54 @@ icon-size-donate {
   }
 }
 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .lang {
+    padding-right: 30px;
+  }
+  .gallary-title {
+    margin-left: 88px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .lang {
+    padding-right: 30px;
+  }
+  .gallary-title {
+    margin-left: 99px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .lang {
+    padding-right: 30px;
+  }
+  .gallary-title {
+    margin-left: 115px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
 /* ----------- iPhone X ----------- */
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .lang {
     padding-right: 30px;
+  }
+  .gallary-title {
+    margin-left: 99px;
+    font-size: 35px;
+    font-weight: bold;
   }
 }
